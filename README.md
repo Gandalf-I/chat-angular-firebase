@@ -2,7 +2,7 @@
 
 Link in firebase: https://chat-ad3f4.web.app/chat
 
-#TODO
+# TODO
 
 ##### Add resolver
 ##### Fix subscriptions
