@@ -6,3 +6,7 @@ Link in firebase: https://chat-ad3f4.web.app/chat
 
 ##### Add resolver
 ##### Fix subscriptions
+##### Fix layout 
+##### Add preloader
+##### Add private chat
+##### Add user chat list
