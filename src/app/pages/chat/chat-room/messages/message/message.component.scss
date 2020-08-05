@@ -1,0 +1,47 @@
+.message-wrap {
+  display: grid;
+  grid-template-columns: 3.25rem auto 5.5rem;
+  grid-column-gap: 0.75rem;
+  align-items: center;
+  padding: 0 0.8rem;
+  margin: 0.6rem auto;
+  .user-photo {
+    align-self: start;
+    height: 3.25rem;
+    width: 3.25rem;
+    border-radius: 50%;
+  }
+
+  .message-content {
+    display: grid;
+    word-wrap: break-word;
+
+    .name-user {
+      font-size: 0.9rem;
+      color: #3a6d99;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .message-text {
+      width: 100%;
+      font-size: 1rem;
+      //max-width: 23rem;
+      min-width: 5rem;
+      white-space: pre-wrap;
+    }
+  }
+
+  .time-send {
+    display: grid;
+    align-self: end;
+    text-align: center;
+    font-size: 0.9rem;
+
+    .sec-send {
+      font-size: 0.8rem;
+    }
+  }
+}

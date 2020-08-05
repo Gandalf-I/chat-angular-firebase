@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chat-ad3f4": {
+      "hosting": {
+        "mega-chat": [
+          "chat-ad3f4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chat-ad3f4"
+  }
+}

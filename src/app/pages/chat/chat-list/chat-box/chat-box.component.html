@@ -1,0 +1,7 @@
+<div class="chat-wrap">
+  <div class="chat pointer" (click)=chatS.setActiveChat(chat) [ngClass]="{active:chatActive}">
+    <img src="./assets/icons/empty-photo.svg" alt="chat-photo" class="chat-photo">
+    <span class="chat-name">{{chat.title}}</span>
+  </div>
+</div>
+

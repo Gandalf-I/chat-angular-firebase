@@ -1,0 +1,16 @@
+.first-split-wrap {
+  display: grid;
+  grid-template-columns: 3.8rem auto;
+  align-items: center;
+  justify-items: center;
+
+  .exit-photo {
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    color: white;
+  }
+}

@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -15,6 +14,19 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@shared/*": [ "src/app/shared/*"],
+      "@core/*": [ "src/app/core/*"],
+      "@store/*": [ "src/app/store/*"],
+      "@app/*": [ "src/app/*"],
+      "@backend/*": [ "src/app/backend/*"],
+      "@environment/*": [ "src/environments/*"],
+      "@pages/*": [ "src/app/pages/*"],
+      "@generic/*": [ "src/app/pages/generic/*"],
+      "@mobile/*": [ "src/app/pages/mobile/*"],
+      "@desktop/*": [ "src/app/pages/desktop/*"],
+      "@layouts/*": [ "src/app/core/layouts/*"]
+    }
   }
 }

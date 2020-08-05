@@ -1,0 +1,13 @@
+:host {
+  display: grid;
+  align-items: end;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.chat-room-wrap {
+  display: grid;
+  justify-items: stretch;
+  grid-template-rows: 1fr 8rem;
+  grid-row-gap: 1rem;
+}

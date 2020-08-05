@@ -1,0 +1,38 @@
+.auth-wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background-color: #E7EBF0;
+  justify-items: center;
+  align-items: center;
+
+  .auth {
+    height: 80%;
+
+    .tabs {
+      border-bottom: 2px solid #3F51B5;
+    }
+
+    .social-auth {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-auto-flow: column;
+
+      .social-inner {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        .icon-social {
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+
+}
+
+
+

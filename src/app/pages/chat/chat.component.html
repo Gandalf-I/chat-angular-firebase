@@ -1,0 +1,10 @@
+<div class="chat-wrap">
+  <app-header></app-header>
+  <div class="main-page-wrap">
+    <app-chat-list *ngIf="appS.visibility || !appS.chatSelect"></app-chat-list>
+    <app-chat-room *ngIf="appS.chatSelect"></app-chat-room>
+    <span class="select-chat" *ngIf="appS.visibility && !appS.chatSelect">
+      Please select a chat to start messaging
+    </span>
+  </div>
+</div>

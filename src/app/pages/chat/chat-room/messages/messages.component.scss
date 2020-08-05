@@ -1,0 +1,6 @@
+.messages-wrap {
+  display: grid;
+  overflow: auto;
+  max-height: calc(100vh - 3.5rem - 10rem); // header + panel ¯\_(ツ)_/¯
+  height: 100%;
+}

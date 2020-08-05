@@ -1,0 +1,6 @@
+<header class="head-wrap">
+  <div class="head-split">
+    <app-first-split *ngIf="appS.visibility||!appS.chatSelect"></app-first-split>
+    <app-chat-info *ngIf="appS.visibility||appS.chatSelect"></app-chat-info>
+  </div>
+</header>

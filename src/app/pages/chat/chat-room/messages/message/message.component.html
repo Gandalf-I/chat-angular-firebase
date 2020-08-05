@@ -1,0 +1,15 @@
+<div class="message-wrap">
+  <img *ngIf="userSender?.photoURL; else empty_photo"
+       src="{{userSender.photoURL}}" alt="photo" class="user-photo">
+  <ng-template #empty_photo>
+    <img src="./assets/icons/empty-photo.svg" alt="user-photo" class="user-photo">
+  </ng-template>
+  <div class="message-content">
+    <p class="name-user">{{userSender?.name}}</p>
+    <span class="message-text">{{message.content}}</span>
+  </div>
+  <div class="time-send">
+    <time class="date-send">{{message.date | date: 'dd/MM/yyyy'}}</time>
+    <time class="sec-send">{{message.date | date: 'HH:mm:ss'}}</time>
+  </div>
+</div>

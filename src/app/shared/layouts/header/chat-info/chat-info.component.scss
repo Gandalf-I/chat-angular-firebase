@@ -1,0 +1,20 @@
+.chat-info-wrap {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr 3.5rem;
+  justify-items: center;
+
+  .chat-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .search-img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .delete-img {
+    height: 2rem;
+    width: 2rem;
+  }
+}

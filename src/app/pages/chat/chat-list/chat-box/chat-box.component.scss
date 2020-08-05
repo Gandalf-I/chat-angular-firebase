@@ -1,0 +1,49 @@
+.chat-wrap {
+  .chat {
+    display: grid;
+    grid-template-columns: 3.5rem auto;
+    grid-column-gap: 0.7rem;
+    align-items: center;
+    justify-items: center;
+    padding: 0.5rem 0.7rem;
+    text-decoration: none;
+
+    .chat-photo {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+
+    .chat-name {
+      width: 100%;
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    //.user-activity {
+    //  height: 10px;
+    //  width: 10px;
+    //  border-radius: 50%;
+    //}
+    //
+    //.active {
+    //  background: green;
+    //}
+    //
+    //.inactive {
+    //  background: red;
+    //}
+
+  }
+
+}
+
+.active {
+  background-color: #5682a3;
+}
+
+
+

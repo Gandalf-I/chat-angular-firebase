@@ -1,0 +1,32 @@
+:host {
+  align-items: end;
+}
+
+.panel-wrap {
+  display: grid;
+  grid-template-columns: 1fr 10fr 3rem;
+  padding: 0.7rem;
+  grid-column-gap: 0.7rem;
+  align-items: center;
+  justify-content: center;
+
+  .user-photo {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+  }
+
+  .send-photo {
+    height: 3rem;
+    width: 3rem
+  }
+
+  .input-message {
+    font-size: 0.9rem;
+    height: 3.75rem;
+    width: 100%;
+    min-width: 10rem;
+    //max-width: 30rem;
+    resize: none;
+  }
+}

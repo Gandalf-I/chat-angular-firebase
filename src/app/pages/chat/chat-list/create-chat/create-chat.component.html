@@ -1,0 +1,11 @@
+<div class="create-chat-wrap">
+  <form [formGroup]="newChat">
+    <mat-form-field  class="input-title">
+      <mat-label>Create chat</mat-label>
+      <label>
+        <input matInput type="text" class="search-input" formControlName="title" placeholder="Title" >
+      </label>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="primary" class="create-chat" (click)="createChat()">Create Chat</button>
+</div>

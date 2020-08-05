@@ -1,0 +1,18 @@
+<div class="panel-wrap">
+  <img *ngIf="userPhoto; else empty_photo"
+       src="{{userPhoto}}" alt="photo" class="user-photo">
+  <ng-template #empty_photo>
+    <img src="./assets/icons/empty-photo.svg" alt="user-photo" class="user-photo">
+  </ng-template>
+  <form [formGroup]="messageForm">
+    <mat-form-field appearance="fill" class="input-message">
+      <mat-label>Message...</mat-label>
+      <label>
+        <textarea formControlName="message" matInput class="input-message"
+                  (keydown.control.enter)="sendMessage()">
+        </textarea>
+      </label>
+    </mat-form-field>
+  </form>
+  <img (click)="sendMessage()" src="./assets/icons/send.svg" alt="send-photo" class="send-photo photo pointer">
+</div>

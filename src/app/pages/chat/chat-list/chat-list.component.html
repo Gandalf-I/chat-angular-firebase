@@ -1,0 +1,11 @@
+<div class="chat-list-wrap"
+     infiniteScroll
+     [infiniteScrollDistance]="1"
+     [infiniteScrollThrottle]="100"
+     (scrolled)="loadMore()">
+  <app-create-chat></app-create-chat>
+  <app-search></app-search>
+  <div class="chat-list">
+    <app-chat-box *ngFor="let chat of chat.chatsId$ | async" [chat]="chat"></app-chat-box>
+  </div>
+</div>

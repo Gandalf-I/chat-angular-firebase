@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+  font-size: 13px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: rgba(255, 255, 255, 0.0);
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  html {
+    font-size: 9px;
+  }
+}

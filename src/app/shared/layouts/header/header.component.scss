@@ -1,0 +1,16 @@
+.head-split {
+  max-width: 1010px;
+  margin: 0 auto;
+  height: 3.5rem;
+  background: #5682a3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+
+@media (max-width: 700px) {
+  .head-split {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,9 @@
+<div class="search-wrap">
+  <img src="./assets/icons/search.svg" alt="search" (click)="searchChat()" class="search-img">
+  <form [formGroup]="search">
+    <label>
+      <input type="text" class="search-input" formControlName="text" (keyup.enter)="searchChat()">
+    </label>
+  </form>
+  <img src="./assets/icons/cross.svg" alt="search" (click)="clearSearch()" class="search-img">
+</div>

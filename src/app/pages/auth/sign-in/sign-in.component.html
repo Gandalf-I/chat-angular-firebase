@@ -1,0 +1,32 @@
+<form [formGroup]="signInForm" (ngSubmit)="submit()" class="sign-in">
+  <mat-form-field class="sign-in__email-input" appearance="outline">
+    <mat-label>
+      Email
+    </mat-label>
+    <label>
+      <input formControlName="email" matInput type="email" placeholder="Your email">
+    </label>
+    <mat-error *ngIf="signInForm.get('email').hasError('pattern')">
+      Email is invalid
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="sign-in__password-input" appearance="outline">
+    <mat-label>
+      Password
+    </mat-label>
+    <label>
+      <input formControlName="password" matInput type="password" placeholder="Your password">
+    </label>
+    <mat-error *ngIf="signInForm.get('password').hasError('minlength')">
+      Min password length is {{ signInForm.get('password').errors.minlength.requiredLength }}
+    </mat-error>
+  </mat-form-field>
+  <app-loader-btn class="sign-in__submit-btn" type="submit" value="Sign in" color="primary"></app-loader-btn>
+  <div class="warning" *ngIf="warning">
+    <img src="./assets/icons/warning.svg" alt="warning" class="warning-img">
+    <span class="error-text">Email or password incorrect</span>
+  </div>
+</form>
+<div class="forgot-password pointer">
+  Forgot password?
+</div>

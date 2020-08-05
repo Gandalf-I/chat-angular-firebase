@@ -1,0 +1,10 @@
+<div class="messages-wrap" #scrollMe
+     infiniteScroll
+     [infiniteScrollUpDistance]="3"
+     [scrollWindow]="false"
+     [infiniteScrollThrottle]="200"
+     (scrolledUp)="getMoreMessage()">
+    <app-message *ngFor="let message of messages | async"
+                 [message]="message"></app-message>
+
+</div>

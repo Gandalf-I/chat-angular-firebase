@@ -1,0 +1,23 @@
+<div class="auth-wrapper">
+  <div class="auth">
+    <mat-card class="tabs">
+      <mat-tab-group class="tabs__group">
+        <mat-tab label="Log in">
+          <app-sign-in></app-sign-in>
+        </mat-tab>
+        <mat-tab label="Registration">
+          <app-sign-up></app-sign-up>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+
+    <mat-card class="social-auth">
+      <div (click)="googleSignIn()" class="social-inner">
+        <button mat-icon-button>
+          <img src="./assets/icons/google.svg" alt="google" class="icon-social">
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
